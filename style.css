@@ -1,0 +1,24 @@
+.content {
+  opacity: 0;
+  transition: opacity 1s ease-in;
+}
+.loaded {
+  opacity: 1;
+}
+
+.input-group {
+  margin-bottom: 15px solid black;
+}
+
+.clear-complete {
+  margin-bottom: 15px;
+}
+
+body {
+  background-image: url('backgroundPic.jpg');
+}
+
+.panel {
+  background-color: rgba(255, 0, 0, 0);
+  color: white;
+}
