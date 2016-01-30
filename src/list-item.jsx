@@ -18,6 +18,7 @@ module.exports = React.createClass({
     return <div className="input-group">
       <span className="input-group-addon">
         <input
+          className="checkbox"
           type="checkbox"
           checked={this.state.done}
           onChange={this.handleDoneChange}
