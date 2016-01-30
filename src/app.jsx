@@ -21,9 +21,9 @@ var App = React.createClass({
   render: function() {
     return <div className="row panel panel-default">
       <div className="col-md-8 col-md-offset-2">
-        <h2 className="text-center">
+        <h1 className="text-center appTitle">
           To-Do List
-        </h2>
+        </h1>
         <Header itemsStore={this.firebaseRefs.items} />
         <hr />
       <div className={"content " + (this.state.loaded ? 'loaded' : '')}>
