@@ -1,5 +1,6 @@
 body {
   background-image: url('backgroundPic.jpg');
+  background-size: cover;
   color: black;
 }
 .panel, .form-control, .checkbox {
