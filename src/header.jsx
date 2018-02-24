@@ -13,6 +13,7 @@ module.exports = React.createClass({
         onChange={this.handleInputChange}
         type="text"
         className="form-control"
+        onKeyPress={this._handleKeyPress}
         />
       <span className="input-group-btn">
         <button
@@ -33,5 +34,12 @@ module.exports = React.createClass({
   },
   handleInputChange: function (event) {
     this.setState({text: event.target.value});
+  },
+  handleKeyPress: function () {
+    this.props.itemsStore.push({
+      text: this.state.text,
+      done: false
+    });
+    this.setState({text: ''});
   }
 });
